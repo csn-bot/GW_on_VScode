@@ -14,11 +14,12 @@ public class WhiteCritterRunner
       ActorWorld world = new ActorWorld();
       
       WhiteCritter thang = new WhiteCritter();
-      Location loc = new Location(4,4);
+      Location loc = new Location(4,3);
       world.add(loc, thang);
       
       world.add(new Location(1,1), new Bug());
-      world.add(new Location(9,1), new Bug(Color.CYAN));
+      world.add(new Location(7,7), new Bug(Color.RED));
+      world.add(new Location(7,7), new Bug(Color.GREEN));
       world.add(new Location(7,7), new Bug(Color.ORANGE));
       world.show();       
    }
